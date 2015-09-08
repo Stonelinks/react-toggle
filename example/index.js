@@ -4,7 +4,7 @@ import Toggle from '../index.es6'
 // In your code this would be:
 // import Toggle from 'react-toggle'
 
-require("../style.css")
+require("../style.less")
 
 var App = React.createClass({
   displayName: 'App',
