@@ -52,7 +52,7 @@ module.exports = React.createClass({
   },
 
   handleClick: function handleClick(event) {
-    var checkbox = React.findDOMNode(this.refs.input);
+    var checkbox = this.refs.input.getDOMNode();
     if (event.target !== checkbox) {
       event.preventDefault();
       checkbox.focus();
