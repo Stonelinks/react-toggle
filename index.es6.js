@@ -1,7 +1,5 @@
 import React from 'react'
 import classNames from 'classnames'
-import Check from './check'
-import X from './x'
 import {addons} from 'react/addons'
 
 var PureRenderMixin = addons.PureRenderMixin;
@@ -73,14 +71,7 @@ export default React.createClass({
 
     return (
       <div className={classes} onClick={this.handleClick}>
-        <div className="react-toggle-track">
-          <div className="react-toggle-track-check">
-            <Check />
-          </div>
-          <div className="react-toggle-track-x">
-            <X />
-          </div>
-        </div>
+        <div className="react-toggle-track"></div>
         <div className="react-toggle-thumb"></div>
 
         <input
