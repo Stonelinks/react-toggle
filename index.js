@@ -48,9 +48,11 @@ module.exports = React.createClass({
   },
 
   handleClick: function handleClick(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
     var checkbox = this.refs.input.getDOMNode();
     if (event.target !== checkbox) {
-      event.preventDefault();
       checkbox.focus();
       checkbox.click();
       return;

@@ -40,10 +40,12 @@ export default React.createClass({
   },
 
   handleClick(event) {
+    event.preventDefault()
+    event.stopPropagation()
+
     var checkbox = this.refs.input.getDOMNode()
     if (event.target !== checkbox)
     {
-      event.preventDefault()
       checkbox.focus()
       checkbox.click()
       return
