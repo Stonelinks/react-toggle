@@ -1,11 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
-import {addons} from 'react/addons'
-
-var PureRenderMixin = addons.PureRenderMixin;
 
 export default React.createClass({
-  mixins: [PureRenderMixin],
 
   displayName: 'Toggle',
 

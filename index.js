@@ -8,12 +8,7 @@ var React = _interopRequire(require("react"));
 
 var classNames = _interopRequire(require("classnames"));
 
-var addons = require("react/addons").addons;
-
-var PureRenderMixin = addons.PureRenderMixin;
-
 module.exports = React.createClass({
-  mixins: [PureRenderMixin],
 
   displayName: "Toggle",
 
